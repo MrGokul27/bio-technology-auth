@@ -14,6 +14,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/loader.js"></script>
   </head>
 
   <body>
@@ -66,11 +67,6 @@
               <li><a href="#about" class="main-header__nav__link">About</a></li>
               <li>
                 <a href="#services" class="main-header__nav__link">Services</a>
-              </li>
-              <li>
-                <a href="#testimonial" class="main-header__nav__link"
-                  >Testimonial</a
-                >
               </li>
               <li><a href="#blog" class="main-header__nav__link">Blog</a></li>
               <li>
@@ -278,16 +274,16 @@
               <!-- Checklist -->
               <ul class="list-unstyled about__list">
                 <li>
-                  <i class="bi bi-check-circle-fill"></i> Many variations of
-                  passages of lorem ipsum
+                  <i class="bi bi-check-circle-fill"></i> Certified laboratory
+                  professionals with years of experience
                 </li>
                 <li>
-                  <i class="bi bi-check-circle-fill"></i> Many variations of
-                  passages of lorem
+                  <i class="bi bi-check-circle-fill"></i> Advanced diagnostic
+                  equipment for accurate testing
                 </li>
                 <li>
-                  <i class="bi bi-check-circle-fill"></i> Expert many variations
-                  teacher
+                  <i class="bi bi-check-circle-fill"></i> Fast report delivery
+                  with secure online access
                 </li>
               </ul>
 
@@ -298,33 +294,226 @@
       </div>
     </section>
 
-    <!-- Features -->
-    <section class="py-5">
+    <!-- Services Section -->
+    <section class="services" id="">
+      <div class="services__bg-shape">
+        <img src="assets/service-shape-1-1.webp" alt="" />
+      </div>
       <div class="container">
+        <div class="sec-title">
+          <h6 class="sec-title__tagline">
+            <i class="bi bi-virus2"></i> Our Services
+          </h6>
+          <h2 class="sec-title__title">
+            We're offering the best <br />
+            services to you
+          </h2>
+        </div>
         <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card h-100 shadow border-0">
-              <div class="card-body text-center">
-                <h4>Secure Login</h4>
-                <p>Frontend authentication using Local Storage.</p>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-card__icon"><i class="bi bi-cpu"></i></div>
+              <h3 class="service-card__title">Artificial Intelligence</h3>
+              <p class="service-card__text">
+                Leveraging AI-powered diagnostics to deliver faster and more
+                accurate laboratory results.
+              </p>
+              <a href="#" class="service-card__link"
+                >Read More <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-card__icon">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <h3 class="service-card__title">Specialized Genetic Tests</h3>
+              <p class="service-card__text">
+                Advanced genetic testing services to identify hereditary
+                conditions and personalized treatments.
+              </p>
+              <a href="#" class="service-card__link"
+                >Read More <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="service-card__icon">
+                <i class="bi bi-eyedropper"></i>
+              </div>
+              <h3 class="service-card__title">Pathology Testing</h3>
+              <p class="service-card__text">
+                Comprehensive pathology services with precise analysis for
+                accurate disease diagnosis.
+              </p>
+              <a href="#" class="service-card__link"
+                >Read More <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies">
+      <div class="container">
+        <div class="sec-title">
+          <h6 class="sec-title__tagline">
+            <i class="bi bi-journal-medical"></i> Case Studies
+          </h6>
+          <h2 class="sec-title__title">Our latest case studies</h2>
+        </div>
+        <ul class="case-studies__list list-unstyled">
+          <li class="case-studies__item">
+            <div class="case-studies__item__content">
+              <div class="case-studies__item__thumb">
+                <img
+                  src="assets/case-stady-1-1.webp"
+                  alt="Diagnostic Imaging"
+                />
+              </div>
+              <div class="case-studies__item__hover">
+                <h4 class="case-studies__item__title">
+                  <a href="#">Diagnostic Imaging</a>
+                </h4>
+                <p class="case-studies__item__text">Orthopedics, Pediatric</p>
+              </div>
+            </div>
+          </li>
+          <li class="case-studies__item">
+            <div class="case-studies__item__content">
+              <div class="case-studies__item__thumb">
+                <img src="assets/case-stady-1-2.webp" alt="Genetic Research" />
+              </div>
+              <div class="case-studies__item__hover">
+                <h4 class="case-studies__item__title">
+                  <a href="#">Genetic Research</a>
+                </h4>
+                <p class="case-studies__item__text">Molecular Biology, DNA</p>
+              </div>
+            </div>
+          </li>
+          <li class="case-studies__item">
+            <div class="case-studies__item__content">
+              <div class="case-studies__item__thumb">
+                <img src="assets/case-stady-1-3.webp" alt="Lab Analysis" />
+              </div>
+              <div class="case-studies__item__hover">
+                <h4 class="case-studies__item__title">
+                  <a href="#">Lab Analysis</a>
+                </h4>
+                <p class="case-studies__item__text">Pathology, Microbiology</p>
+              </div>
+            </div>
+          </li>
+          <li class="case-studies__item">
+            <div class="case-studies__item__content">
+              <div class="case-studies__item__thumb">
+                <img src="assets/case-stady-1-4.webp" alt="Clinical Trials" />
+              </div>
+              <div class="case-studies__item__hover">
+                <h4 class="case-studies__item__title">
+                  <a href="#">Clinical Trials</a>
+                </h4>
+                <p class="case-studies__item__text">Oncology, Immunology</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-one" id="blog">
+      <div class="container">
+        <div class="sec-title">
+          <h6 class="sec-title__tagline">
+            <i class="bi bi-newspaper"></i> Article
+          </h6>
+          <h2 class="sec-title__title">
+            Latest news &amp; articles from <br />
+            the blog posts
+          </h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-card">
+              <div class="blog-card__image">
+                <img
+                  src="assets/photo-1579154204601-01588f351e67.webp"
+                  alt="Blog"
+                />
+                <div class="blog-card__date"><span>02</span>NOV</div>
+              </div>
+              <div class="blog-card__content">
+                <div class="blog-card__author">
+                  <div class="blog-card__author__avatar">D</div>
+                  <div>
+                    <h6 class="blog-card__author__name">Darrell Steward</h6>
+                    <span class="blog-card__author__deg">Doctor</span>
+                  </div>
+                </div>
+                <h3 class="blog-card__title">
+                  <a href="#">Lab safety is everyone's responsibility</a>
+                </h3>
+                <a href="#" class="blog-card__link"
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
               </div>
             </div>
           </div>
-
-          <div class="col-md-4">
-            <div class="card h-100 shadow border-0">
-              <div class="card-body text-center">
-                <h4>Role Based</h4>
-                <p>Separate roles for Admin, Researcher & Student.</p>
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-card">
+              <div class="blog-card__image">
+                <img
+                  src="assets/photo-1532187643603-ba119ca4109e.webp"
+                  alt="Blog"
+                />
+                <div class="blog-card__date"><span>12</span>JUN</div>
+              </div>
+              <div class="blog-card__content">
+                <div class="blog-card__author">
+                  <div class="blog-card__author__avatar">R</div>
+                  <div>
+                    <h6 class="blog-card__author__name">Ralph Edwards</h6>
+                    <span class="blog-card__author__deg">Doctor</span>
+                  </div>
+                </div>
+                <h3 class="blog-card__title">
+                  <a href="#">Advances in genetic research methods</a>
+                </h3>
+                <a href="#" class="blog-card__link"
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
               </div>
             </div>
           </div>
-
-          <div class="col-md-4">
-            <div class="card h-100 shadow border-0">
-              <div class="card-body text-center">
-                <h4>Responsive Design</h4>
-                <p>Works perfectly on all devices.</p>
+          <div class="col-md-6 col-lg-4">
+            <div class="blog-card">
+              <div class="blog-card__image">
+                <img
+                  src="assets/photo-1576086213369-97a306d36557.webp"
+                  alt="Blog"
+                />
+                <div class="blog-card__date"><span>03</span>AUG</div>
+              </div>
+              <div class="blog-card__content">
+                <div class="blog-card__author">
+                  <div class="blog-card__author__avatar">A</div>
+                  <div>
+                    <h6 class="blog-card__author__name">Albert Flores</h6>
+                    <span class="blog-card__author__deg">Doctor</span>
+                  </div>
+                </div>
+                <h3 class="blog-card__title">
+                  <a href="#">Modern pathology testing techniques</a>
+                </h3>
+                <a href="#" class="blog-card__link"
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -332,7 +521,115 @@
       </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="main-footer__inner">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-md-6 col-xl-4">
+              <div class="footer-widget">
+                <a href="index.html" class="footer-widget__logo">
+                  <i class="bi bi-virus2"></i>
+                  <span>Bio Technology</span>
+                </a>
+                <p class="footer-widget__text">
+                  There are many variations passages of Lorem Ipsum available,
+                  but the majority have suffered alteration.
+                </p>
+                <form
+                  class="footer-widget__newsletter"
+                  onsubmit="return false;"
+                >
+                  <input type="email" placeholder="Your email address" />
+                  <button type="submit">
+                    <i class="bi bi-arrow-right"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-2">
+              <div class="footer-widget">
+                <h4 class="footer-widget__title">Links</h4>
+                <ul class="list-unstyled footer-widget__links">
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#services">Service</a></li>
+                  <li><a href="#blog">Latest News</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+              <div class="footer-widget">
+                <h4 class="footer-widget__title">Contact</h4>
+                <ul class="list-unstyled footer-widget__info">
+                  <li>
+                    <i class="bi bi-geo-alt-fill"></i> 30 Commercial street,
+                    Chennai, India
+                  </li>
+                  <li>
+                    <i class="bi bi-telephone-fill"></i>
+                    <a href="tel:+923080808">(303) 555-0105</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-envelope-fill"></i>
+                    <a href="mailto:biotechnology@gmail.com"
+                      >biotechnology@gmail.com</a
+                    >
+                  </li>
+                </ul>
+                <div class="footer-widget__social">
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-pinterest"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+              <div class="footer-widget">
+                <h4 class="footer-widget__title">Opening Hours</h4>
+                <ul class="list-unstyled footer-widget__time">
+                  <li>
+                    <span><i class="bi bi-clock"></i> Saturday</span
+                    ><span>9am - 6pm</span>
+                  </li>
+                  <li>
+                    <span><i class="bi bi-clock"></i> Sunday</span
+                    ><span>9am - 6pm</span>
+                  </li>
+                  <li>
+                    <span><i class="bi bi-clock"></i> Monday</span
+                    ><span>9am - 6pm</span>
+                  </li>
+                  <li>
+                    <span><i class="bi bi-clock"></i> Tuesday</span
+                    ><span>9am - 6pm</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-footer__bottom">
+        <div class="container">
+          <p class="main-footer__copyright">
+            © Copyright <span id="footerYear"></span> by Bio Technology. All
+            Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      document.getElementById("footerYear").textContent =
+        new Date().getFullYear();
+    </script>
   </body>
 </html>
