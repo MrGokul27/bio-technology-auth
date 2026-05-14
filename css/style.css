@@ -97,6 +97,12 @@ html {
   color: #1db954;
 }
 
+.main-header__logo__img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+
 .main-header__logo__name {
   display: block;
   font-size: 20px;
