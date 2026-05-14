@@ -1,5 +1,4 @@
 // REGISTER
-
 const registerForm = document.getElementById("registerForm");
 
 if (registerForm) {
@@ -13,36 +12,21 @@ if (registerForm) {
     const confirmPassword = document.getElementById("confirmPassword").value;
 
     if (password !== confirmPassword) {
-      alert("Passwords do not match");
+      document.getElementById("passwordError").style.display = "block";
       return;
     }
+    document.getElementById("passwordError").style.display = "none";
 
-    let users = JSON.parse(localStorage.getItem("users")) || [];
-
-    const existingUser = users.find((user) => user.email === email);
-
-    if (existingUser) {
-      alert("User already exists");
-      return;
-    }
-
-    users.push({
-      name,
-      role,
-      email,
-      password,
-    });
-
-    localStorage.setItem("users", JSON.stringify(users));
-
-    alert("Registration successful");
+    localStorage.setItem(
+      "loggedInUser",
+      JSON.stringify({ name, role, email, password }),
+    );
 
     window.location.href = "login.html";
   });
 }
 
 // LOGIN
-
 const loginForm = document.getElementById("loginForm");
 
 if (loginForm) {
@@ -52,27 +36,10 @@ if (loginForm) {
     const role = document.getElementById("loginRole").value;
     const email = document.getElementById("loginEmail").value;
     const password = document.getElementById("loginPassword").value;
-    const rememberMe = document.getElementById("rememberMe").checked;
 
-    let users = JSON.parse(localStorage.getItem("users")) || [];
+    const user = { name: email.split("@")[0], role, email, password };
+    localStorage.setItem("loggedInUser", JSON.stringify(user));
 
-    const validUser = users.find(
-      (user) =>
-        user.email === email &&
-        user.password === password &&
-        user.role === role,
-    );
-
-    if (validUser) {
-      localStorage.setItem("loggedInUser", JSON.stringify(validUser));
-
-      if (rememberMe) {
-        localStorage.setItem("rememberUser", validUser.name);
-      }
-
-      window.location.href = "dashboard.html";
-    } else {
-      alert("Invalid Credentials");
-    }
+    window.location.href = "dashboard.html";
   });
 }
