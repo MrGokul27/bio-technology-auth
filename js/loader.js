@@ -1,6 +1,6 @@
 (function () {
   const currentPage = window.location.pathname.split("/").pop() || "index.html";
-  const excluded = ["loader.html", "404.html"];
+  const excluded = ["loader.html", "404.html", "login.html", "register.html"];
 
   if (excluded.includes(currentPage)) return;
 
@@ -9,10 +9,18 @@
   const loaderDone = sessionStorage.getItem("loaderDone");
   const indexLoaderDone = sessionStorage.getItem("indexLoaderDone");
 
+  const backToHome = sessionStorage.getItem("backToHome");
+
+  if (backToHome) {
+    sessionStorage.removeItem("backToHome");
+    return;
+  }
+
   if (isReload || !loaderDone || (isIndex && !indexLoaderDone)) {
     sessionStorage.removeItem("loaderDone");
     sessionStorage.removeItem("indexLoaderDone");
-    sessionStorage.setItem("loaderTarget", currentPage || "index.html");
+    const target = isIndex ? "login.html" : (currentPage || "login.html");
+    sessionStorage.setItem("loaderTarget", target);
     window.location.href = "loader.html";
   }
 })();
