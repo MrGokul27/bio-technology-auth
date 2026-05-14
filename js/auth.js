@@ -49,3 +49,17 @@ if (loginForm) {
     window.location.href = "dashboard.html";
   });
 }
+
+// PASSWORD TOGGLE
+document.querySelectorAll(".auth-field__eye").forEach((eye) => {
+  eye.addEventListener("click", function () {
+    const input = document.getElementById(this.dataset.target);
+    if (input.type === "password") {
+      input.type = "text";
+      this.classList.replace("bi-eye", "bi-eye-slash");
+    } else {
+      input.type = "password";
+      this.classList.replace("bi-eye-slash", "bi-eye");
+    }
+  });
+});

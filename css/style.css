@@ -2428,3 +2428,16 @@ html {
   opacity: 1;
   transform: translate(0) scale(1);
 }
+
+
+.auth-field__eye {
+  left: auto !important;
+  right: 14px;
+  color: #aaa !important;
+  cursor: pointer;
+  pointer-events: all !important;
+}
+
+.auth-field__eye:hover {
+  color: #1db954 !important;
+}
